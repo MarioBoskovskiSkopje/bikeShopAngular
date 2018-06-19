@@ -12,7 +12,7 @@ export class Removeduplicates1Pipe implements PipeTransform {
 
 
     if (value !== undefined && value !== null) {
-        return _.uniqBy(value, 'material');
+      return _.uniqBy(value, 'material');
 
 
     }
@@ -23,4 +23,5 @@ export class Removeduplicates1Pipe implements PipeTransform {
 
     return value;
 
+  }
 }
