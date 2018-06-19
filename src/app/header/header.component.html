@@ -12,6 +12,7 @@
   </form>
   <button (click)="searching()">Search by Brand Name</button>
 </div>
+<<<<<<< HEAD
 <div class="container">
   <div class="row">
 
@@ -77,6 +78,43 @@
     </div>
   </div>
   </div>
+=======
+
+<div class="row">
+  <div class="col">
+    <div>
+      <h3>Check Boxes:</h3>
+      
+      <div *ngFor="let item of allBikes | removeduplicates : 'model'">
+        <div class="checkbox">
+          <label for="{{item.model}}">
+            <input #checkValue type="checkbox" value="" (click)="onCheck('model',item.model,checkValue)">{{item.model}}</label>
+
+          <label for="{{item.material}}">
+            <input #checkValue5 type="checkbox" value="" (click)="onCheck('material',item.material,checkValue5)">{{item.material}}</label>
+
+            <label for="{{item.wheels}}">
+              <input #checkValue4 type="checkbox" value="" (click)="onCheck('material',item.wheels,checkValue4)">{{item.wheels}}</label>
+
+              <label for="{{item.kind}}">
+                <input #checkValue3 type="checkbox" value="" (click)="onCheck('kind',item.kind,checkValue3)">{{item.kind}}</label>
+            
+                <label for="{{item.shifter}}">
+                  <input #checkValue1 type="checkbox" value="" (click)="onCheck('shifter',item.shifter,checkValue1)">{{item.shifter}}</label>
+
+                  <label for="{{item.ramSize}}">
+                    <input #checkValue2 type="checkbox" value="" (click)="onCheck('ramSize',item.ramSize,checkValue2)">{{item.ramSize}}</label>
+
+                    <label for="{{item.genre}}">
+                      <input #checkValue6 type="checkbox" value="" (click)="onCheck('genre',item.genre,checkValue6)">{{item.genre}}</label>
+            </div>
+          
+          
+
+      </div>
+    </div>
+  </div>
+>>>>>>> 56639961bdb4ab483c2649e64f386362832e9083
 </div>
 
 
@@ -113,4 +151,8 @@
     </div>
 
   </section>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> 56639961bdb4ab483c2649e64f386362832e9083
